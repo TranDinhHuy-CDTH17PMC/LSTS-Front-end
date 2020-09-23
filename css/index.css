@@ -1,65 +1,80 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .menu-container {
-   display: flex;
-}
-.bar{
-    /* position: relative; */
-    width: 100%;
-    
-   
+    border-bottom: 3px solid hsl(181, 99%, 34%);
 }
 .logo {
-    width: 220px;
-    height: 120px;
-    background-color: aquamarine;
+  width: 230px;
+  height: 120px;
+  background-color: hsl(181, 99%, 34%);
+  float: left;
 }
-.top-bar{
-   
-    
+.bar {
 }
-.top-bar__right--wrapper{   
-    background-color: azure;
-    width: 50%;
-    float: left;
+.top-bar {
+  background-color: gainsboro;
 }
-.top-bar__left--wrapper{
-    background-color: rebeccapurple;
-    float: left;
-    width: 50%;
+.top-bar__right--wrapper {
+  float: left;
+  overflow: hidden;
+}
+
+.top-bar__left--wrapper {
+  overflow: hidden;
+  height: 40px;
 }
 .top-bar__right {
+  text-align: center;
+}
+.top-bar__right > li {
+  float: left;
+  list-style-type: none;
+  border-right: 1px solid gray;
+  padding: 0 18px;
+  line-height: 40px;
+}
+.top-bar__left > li {
+    float: right;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    border-left: 1px solid gray;
+    padding: 0 18px;
+    line-height: 40px;
+}
+.main-bar {
+  position: relative;
+}
+.main-bar__list {
+  width: fit-content;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.main-bar__list > li {
+  margin: 5px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.list__item p{
+    margin-top: 10px;
     
 }
-.top-bar__right li {
-    float: left;
+.list__item > a {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold; 
+    text-decoration: none;
 }
-.top-bar__left li {
-    float: left;
+.main-bar--right {
+  float: left;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.top-bar__left {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-}
-.main-bar{
-    width: 100%;
-    background-color: yellow;
-}
-.main-bar__list{
- 
-    width: 100%;
-}
-.main-bar__list li {
-    margin: 15px;
-    float: left;
-    list-style-type: none;
-}
+
