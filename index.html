@@ -8,7 +8,9 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         /> -->
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="/images/favicon.ico" />
 
     <title>Document</title>
 </head>
@@ -51,30 +53,57 @@
                 <div class="main-bar">
                     <div class="main-bar__left">
 
-                        <a href="#">
-                            <img src="images/icon-home2.png" />
-                            <p>Nhà trường</p>
-                        </a>
 
+                        <div class="dropdown">
+                            <a href="#">
+                                <img src="images/icon-home2.png" />
+                                <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                                <a href="#">Link 4</a>
+                                <a href="#">Link 5</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="index.html">
+                                <img src="images/icon-chuongtrinh2.png" />
+                                <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                            </a>
 
+                            <div class="dropdown-content">
+                                <a href="#">Link 3</a>
+                                <a href="#">Link 4</a>
+                                <a href="#">Link 5</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="index.html">
+                                <img src="images/icon-hocsinh2.png" />
+                                <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                            </a>
+
+                            <div class="dropdown-content">
+                                <a href="#">Link 3</a>
+                                <a href="#">Link 4</a>
+                                <a href="#">Link 5</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="index.html">
+                                <img src="images/icon-tuyensinh2.png" />
+                                <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                            </a>
+
+                            <div class="dropdown-content">
+                                <a href="#">Link 3</a>
+                                <a href="#">Link 4</a>
+                                <a href="#">Link 5</a>
+                            </div>
+                        </div>
                         <a href="index.html">
-                            <img src="images/icon-chuongtrinh2.png" />
-                            <p>Chương trình</p>
-                        </a>
-
-                        <a href="index.html">
-                            <img src="images/icon-hocsinh2.png" />
-                            <p>Học sinh</p>
-                        </a>
-
-                        <a href="index.html">
-                            <img src="images/icon-tuyensinh2.png" />
-                            <p>Tuyển sinh</p>
-                        </a>
-
-                        <a href="index.html">
-                            <img src="images/icon-hoidap2.png" />
-                            <p>Hỏi đáp</p>
+                            <img src="/images/icon-hoidap2.png" />
+                            <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
                         </a>
                         <div class="dropdown">
                             <a href="#">
@@ -100,10 +129,288 @@
             </div>
         </div>
     </header>
+    <section>
+        <div class="slide-notifi">
+            <div class="slideshows">
+                <div class="slide fade">
+                    <img src="images/slides/27.12.2017-HTTN-18.JPG">
+                </div>
+                <div class="slide fade">
+                    <img src="images/slides/_MG_8385.JPG">
+                </div>
+                <div class="slide fade">
+                    <img src="images/slides/30.9.2017-le-10-nam-10.JPG">
+                </div>
+                <div class="slide fade">
+                    <img src="images/slides/27.12.2017-HTTN-8.JPG">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="slide-circle">
+               <i class="fa fa-circle"></i>
+               <i class="fa fa-circle"></i>
+               <i class="fa fa-circle"></i>
+               <i class="fa fa-circle"></i>
+               <i class="fa fa-circle"></i>
+            </div>
+            <div class="notification">
+                <div class="header notifi__header">Thông báo</div>
+                <div class="notifi__content">
+                    <ul>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam obcaecati odio ea, fugiat
+                            earum
+                            eaque temporibus voluptate, veniam harum blanditiis, suscipit error. Explicabo unde mollitia
+                            soluta, esse accusamus cupiditate in!</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nulla aliquid
+                            accusantium,
+                            eius vitae adipisci quisquam dicta ea totam et soluta id modi reiciendis voluptates veniam,
+                            sint
+                            hic nam asperiores.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam iure exercitationem quasi ab
+                            ullam fugit, odit natus eos assumenda, error aperiam. Quaerat dolorem quos at possimus
+                            doloribus
+                            odio est dolore.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae in minima
+                            quod.
+                            Omnis debitis veniam doloremque? Delectus nisi officia perspiciatis, amet impedit nobis
+                            earum
+                            vitae accusantium quos corrupti itaque.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque perferendis corporis
+                            amet,
+                            quasi consectetur quaerat animi explicabo nisi quis, temporibus praesentium, atque
+                            repudiandae
+                            obcaecati quae totam. Eveniet, quia dolorum.</li>
+                    </ul>
+                </div>
+                <div class="notifi__calender">
+                    <div class="calender--wrapper">
+                        <table class="table table--calender">
+                            <thead>
+                                <tr>
+                                    <th class="title"></th>
+                                    <th class="title"></th>
+                                    <th class="title"></th>
+                                    <th class="title"></th>
+                                    <th class="title"></th>
+                                    <th class="title"></th>
+                                    <th class="title"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="calender__title">
+                        Lịch năm học</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="header event__header">
+                Sự kiện
+            </div>
+            <div class="event__icon">
+                <i class="fa fa-calendar-check-o"></i>
+                <i class="fa fa-calendar-check-o"></i>
+                <i class="fa fa-calendar-check-o"></i>
+            </div>
+            <div class="event__list">
+                <div class="card card--event">
+                    <div class="content"></div>
+                    <div class="event-time">
+
+                    </div>
+
+                </div>
+                <div class="card card--event">
+                    <div class="event__content"></div>
+                    <div class="event__time">
+
+                    </div>
+
+                </div>
+                <div class="card card--event">
+                    <div class="event__content"></div>
+                    <div class="event__time">
+
+                    </div>
+
+                </div>
+                <div class="card card--event">
+                    <div class="event__content"></div>
+                    <div class="event__time">
+
+                    </div>
+
+                </div>
+                <div class="card card--event">
+                    <div class="event__content"></div>
+                    <div class="event__time">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="new">
+            <div class="header new__header">Tin tức</div>
+            <div class="new__slides">
+                <div class="new__body">
+                    <div class="new__content">
+                        <div class="new__time">
+                            19/09/2020
+                        </div>
+                        <div class="new__title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci necessitatibus
+                            deleniti beatae nobis magnam reprehenderit a. Cum odio deserunt quisquam corrupti voluptatem
+                            natus iusto incidunt laudantium amet a. Odit.
+                        </div>
+                        <div class="new__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quaerat voluptatibus
+                            voluptatum velit veniam provident numquam molestiae doloremque veritatis suscipit.
+                            Temporibus laboriosam maiores voluptate ullam maxime distinctio itaque corrupti a?
+                            <div class="read-more">
+                                Đọc tiếp
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="new__img"></div>
+                </div>
+                <div class="new__body">
+                    <div class="new__content">
+                        <div class="new__time">
+                            19/09/2020
+                        </div>
+                        <div class="new__title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci necessitatibus
+                            deleniti beatae nobis magnam reprehenderit a. Cum odio deserunt quisquam corrupti voluptatem
+                            natus iusto incidunt laudantium amet a. Odit.
+                        </div>
+                        <div class="new__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quaerat voluptatibus
+                            voluptatum velit veniam provident numquam molestiae doloremque veritatis suscipit.
+                            Temporibus laboriosam maiores voluptate ullam maxime distinctio itaque corrupti a?
+                            <div class="read-more">
+                                Đọc tiếp
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="new__img"></div>
+                </div>
+                <div class="new__body">
+                    <div class="new__content">
+                        <div class="new__time">
+                            19/09/2020
+                        </div>
+                        <div class="new__title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci necessitatibus
+                            deleniti beatae nobis magnam reprehenderit a. Cum odio deserunt quisquam corrupti voluptatem
+                            natus iusto incidunt laudantium amet a. Odit.
+                        </div>
+                        <div class="new__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quaerat voluptatibus
+                            voluptatum velit veniam provident numquam molestiae doloremque veritatis suscipit.
+                            Temporibus laboriosam maiores voluptate ullam maxime distinctio itaque corrupti a?
+                            <div class="read-more">
+                                Đọc tiếp
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="new__img"></div>
+                </div>
+            </div>
+            <div class="circle-list">
+                <ul>
+                    <li class="fa fa-circle"></li>
+                    <li class="fa fa-circle"></li>
+                    <li class="fa fa-circle"></li>
+                    <li class="fa fa-circle"></li>
+                    <li class="fa fa-circle"></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="top-student">
+            <div class="header top-student__header"></div>
+            <div class="card-list">
+                <div class="card card--top-student">
+                    <div class="card-img"></div>
+                    <div class="card-name"></div>
+                </div>
+                <div class="card card--top-student">
+                    <div class="card-img"></div>
+                    <div class="card-name"></div>
+                </div>
+                <div class="card card--top-student">
+                    <div class="card-img"></div>
+                    <div class="card-name"></div>
+                </div>
+            </div>
+            <div class="bangvang-quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui assumenda ullam
+                accusamus porro adipisci aperiam, rerum fuga unde doloremque eaque, at doloribus totam nihil quia.
+                Delectus animi quibusdam repellendus dolores.</div>
+        </div>
+        <div class="docngam">
+            <div class="header header--docngam">
+                <div class="card card--docngam">
+                    <div class="card-title">
+
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                    <div class="read-more">
+
+                    </div>
+                </div>
+                <div class="card card--docngam">
+                    <div class="card-title">
+
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                    <div class="read-more">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousels">
+            <div class="card card--carousel">
+                <div class="card-img"><img src="" alt=""></div>
+                <div class="card-title>"></div>
+            </div>
+            <div class="card card--carousel">
+                <div class="card-img"><img src="" alt=""></div>
+                <div class="card-title>"></div>
+            </div>
+            <div class="card card--carousel">
+                <div class="card-img"><img src="" alt=""></div>
+                <div class="card-title>"></div>
+            </div>
+            <div class="card card--carousel">
+                <div class="card-img"><img src="" alt=""></div>
+                <div class="card-title>"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
+
 
 </html>

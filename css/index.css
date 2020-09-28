@@ -1,161 +1,40 @@
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(/font/UTM\ Avo.ttf);
+.slide-notifi{
+    position: relative;
+    width: 1343px;
+    height: 823px;
+    background-color: bisque;
 }
-* {
-  margin: 0;
-  padding: 0;
-  font-family: myFirstFont;
+.slideshows{
+    
 }
-
-
-.menu-container {
-  border-bottom: 3px solid hsl(181, 99%, 34%);
+.slide {
+    display: none;
 }
-.logo {
-  width: 230px;
-  height: 120px;
-  background-color: hsl(181, 99%, 34%);
-  float: left;
-  text-align: center;
+.slide > img{
+    width: 100%;
+    height: 100%;
 }
-.bar {
+.notification{
+    width: 980px;
+    height: 337px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    
 }
-.top-bar {
-  background-color: gainsboro;
+.event{
+    display: none;
 }
-.top-bar__right--wrapper {
-  float: left;
-  overflow: hidden;
+.new{
+    display: none;
 }
-
-.top-bar__left--wrapper {
-  overflow: hidden;
-  height: 40px;
-}
-.top-bar__right {
-  text-align: center;
-}
-.top-bar__right > li {
-  float: left;
-  list-style-type: none;
-  border-right: 1px solid gray;
-  padding: 0 18px;
-  line-height: 40px;
-}
-.top-bar__left > li {
-  float: right;
-  list-style-type: none;
-  border-left: 1px solid gray;
-  padding: 0 18px;
-  line-height: 40px;
-}
-.main-bar {
-  height:  80px;
-  overflow: hidden;
-  
-}
-.main-bar__list {
-  width: fit-content;
-  overflow: hidden;
+.top-student{
+    display: none;
 }
 
-.main-bar__left{
+.docngam{
+    display: none;
 }
-
-.dropdown {
-  float: left;
-  
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.dropdown-content {
-  display: block;
-  background-color: #fab325;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.main-bar__left  a{
-  float: left;
-  display: block;
-  line-height: 24px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: gray;
-  font-size: 14px;
-  padding: 8px;
-  outline: none;
-  height: 100%;
-  margin-right: 15px;
-}
-
-.main-bar__left a:hover{
-  color: hsl(181, 99%, 34%);
-  border-bottom: 5px solid hsl(181, 99%, 34%);
-}
-
-
-.main-bar--right {
-  float: left;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.main-bar--button {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 40px;
-  padding: 0px 14px;
-  color: white;
-  background-color: #fab325;
-  border: 0px;
-  margin-right: 15px;
-  outline: 0px;
-}
-.main-bar--button > i {
-  margin-right: 15px;
-}
-.main-bar--menu {
-  font-size: 20px;
-  height: 80px;
-  width: 80px;
-  border: 0px;
-  outline: 0px;
-}
-
-.main-bar--menu:hover {
-  background-color: rebeccapurple;
+.carousels{
+    display: none;
 }
