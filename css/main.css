@@ -25,7 +25,7 @@
 .bar {
 }
 .top-bar {
-  background-color: gainsboro;
+  background-color: whitesmoke;
 }
 .top-bar__right--wrapper {
   float: left;
@@ -42,14 +42,14 @@
 .top-bar__right > li {
   float: left;
   list-style-type: none;
-  border-right: 1px solid gray;
+  border-right: 1px solid rgb(153, 138, 138);
   padding: 0 18px;
   line-height: 40px;
 }
 .top-bar__left > li {
   float: right;
   list-style-type: none;
-  border-left: 1px solid gray;
+  border-left: 1px solid rgb(107, 93, 93);
   padding: 0 18px;
   line-height: 40px;
 }
@@ -131,7 +131,7 @@
 
 .main-bar__left a:hover{
   color: hsl(181, 99%, 34%);
-  border-bottom: 5px solid hsl(181, 99%, 34%);
+  border-bottom: 3px solid hsl(181, 99%, 34%);
 }
 
 
@@ -157,7 +157,7 @@
 }
 .main-bar--menu {
   font-size: 20px;
-  height: 80px;
+  height: 77px;
   width: 80px;
   border: 0px;
   outline: 0px;
