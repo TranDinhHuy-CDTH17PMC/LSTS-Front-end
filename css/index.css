@@ -11,7 +11,12 @@
   animation-duration: 1.6s;
 }
 @keyframes fade {
-   from { opacity: .4;} to { opacity:  1;}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .slide > img {
   width: 100%;
@@ -53,20 +58,18 @@
   border-radius: 15px 5px 5px 15px;
 }
 .prev:hover {
-  background-color: rgba(31, 27, 27, 1);
+  background-color: black;
   color: #fff;
 }
 .next:hover {
-  background-color: rgba(31, 27, 27, 1);
+  background-color: black;
   color: #fff;
 }
 .slide-circle .active {
   border-radius: 50%;
-  border: 5px solid rgba(128, 128, 128, 0.658);;
-  background-color: rgba(128, 128, 128, 0.658);
-  color:rgba(128, 128, 128, 0.658);
- 
-  
+  border: 5px solid black;
+  background-color: black;
+  color: white;
 }
 .notification {
   display: block;
@@ -241,12 +244,125 @@ td {
   transform: translate(-50%, 0);
 }
 .new {
-  display: none;
+  width: 1343px;
+  height: 619px;
+  background-color: #d3e4e4;
+  position: relative;
 }
-.top-student {
-  display: none;
+.new__warraper {
+  position: absolute;
+  width: 980px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 8px dashed black;
+  outline: 14px solid hsl(196, 80%, 40%);
+}
+.header__wrapper {
+  text-align: center;
+  padding: 15px 0;
+}
+.new--header {
+  display: inline;
+  border: 1px dashed hsl(196, 80%, 40%);
+  padding: 0px 15px;
+  border-radius: 5px;
 }
 
+.new__slides {
+  width: 930px;
+  height: 340px;
+}
+.new__content {
+  width: 350px;
+  height: 75px;
+  padding: 0px 50px 0px 25px;
+  float: left;
+}
+.new__title {
+  font-size: 16px;
+  text-align: left;
+}
+.new__title a {
+  text-decoration: none;
+  color: rgb(18, 103, 155);
+  font-family: "AvoBold";
+  font-weight: 500;
+  line-height: 2.4px;
+}
+.new__slides {
+  position: relative;
+}
+.new__slides > .slide-circle-2 {
+  color: black;
+  top: 0;
+}
+.slide-circle-2 > i {
+  background-color: #16c0c3;
+  border: 2px solid #16c0c3;
+  border-radius: 50%;
+  color: #16c0c3;
+  transition: all 0.6s ease;
+}
+.slide-circle-2 > i:hover {
+  color: transparent;
+  background-color: transparent;
+}
+.slide-circle-2 .active {
+  color: transparent;
+  background-color: transparent;
+}
+.read-more > a {
+  float: right;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+.new__img img {
+  float: right;
+  width: 50%;
+  height: 50%;
+}
+.top-student {
+}
+.top-student__header {
+  padding: 30px 0;
+}
+.card-list {
+  
+  border-top: 80px solid hsl(196, 80%, 40%);
+  background: url(/images/backgroud/bg_4.jpg) center no-repeat;
+}
+
+.card--top-student {
+  float: right;
+  padding: 30px;
+  background-color: white;
+  transition: all 0.5s ease-in;
+  box-shadow: 5px 5px 10px 0px rgba(66, 66, 66, 0.75);
+}
+.card--top-student:hover {
+  transform: scale(1.2);
+}
+@font-face {
+  font-family:"UTMAmericana" ;
+  src: url(/font/[cnttqn.net]\ UTM\ Americana.ttf);
+}
+.bangvang-quote {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "UTMAmericana" !important;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+.bangvang-quote > span{
+  font-family: "UTMAmericana" !important;
+  font-weight: bold;
+  font-style: normal;
+}
 .docngam {
   display: none;
 }

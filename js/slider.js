@@ -1,24 +1,50 @@
-var slideIndex = 1;
-showSlide(slideIndex);
+var classNames = ["slide", "slide__new"];
+var dotIndexs  = ["slide--index","slide--new"];
+var slideIndex = [0, 0];
+
+showSlide(0);
+showSlide(1);
 
 
-function plusSlides(n){
-  showSlide(slideIndex += n);
+function plusSlides(n , no){
+  showSlideNumber(slideIndex[no] += n, no);
 }
 
-function currentSlide(n) {
-  showSlide(slideIndex = n);
+function currentSlide(n, no) {
+  showSlideNumber(slideIndex[no] = n , no);
 }
-function showSlide(n) {
+
+function showSlide(no) {
   var i = 0;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("fa-circle");
+  var slides = document.getElementsByClassName(classNames[no]);
+  var dots = document.getElementById(dotIndexs[no]).getElementsByClassName("fa-circle");
 
-  if (n > slides.length) {
-    slideIndex = 1;
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  for (i = 0; i < slides.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slideIndex[no] ++;
+  if (slideIndex[no] > slides.length) {
+    slideIndex[no] = 1;
+  }
+
+  slides[slideIndex[no] - 1].style.display = "block";
+  dots[slideIndex[no] - 1].className += " active";
+  setTimeout(showSlide, 3000, no);
+
+}
+function showSlideNumber(n, no) {
+  var i = 0;
+  var slides = document.getElementsByClassName(classNames[no]);
+  var dots = document.getElementById(dotIndexs[no]).getElementsByClassName("fa-circle");
   if (n < 1) {
     slideIndex = slideIndex.length;
+  }
+  if (n > slides.length) {
+    slideIndex[no] = 1;
   }
 
   for (i = 0; i < slides.length; i++) {
@@ -27,8 +53,9 @@ function showSlide(n) {
   for (i = 0; i < slides.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 
-  
+
+  slides[slideIndex[no] - 1].style.display = "block";
+  dots[slideIndex[no] - 1].className += " active";
+
 }
