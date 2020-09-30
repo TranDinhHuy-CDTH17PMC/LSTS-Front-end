@@ -331,13 +331,15 @@ td {
   padding: 30px 0;
 }
 .card-list {
-  
+  height: 100%;
+  display: flex;
+  justify-content: center;
   border-top: 80px solid hsl(196, 80%, 40%);
-  background: url(/images/backgroud/bg_4.jpg) center no-repeat;
 }
 
 .card--top-student {
-  float: right;
+  top:50px;
+  width: fit-content;
   padding: 30px;
   background-color: white;
   transition: all 0.5s ease-in;
@@ -350,13 +352,18 @@ td {
   font-family:"UTMAmericana" ;
   src: url(/font/[cnttqn.net]\ UTM\ Americana.ttf);
 }
+.top-student__wrapper {
+  background-size: cover;
+  background: url(/images/backgroud/bg_4.jpg) center no-repeat;
+  
+}
 .bangvang-quote {
+  width: 100%;
   text-align: center;
   padding: 20px 0;
   font-family: "UTMAmericana" !important;
   font-size: 18px;
   font-style: italic;
-  margin-bottom: 100px;
 }
 .bangvang-quote > span{
   font-family: "UTMAmericana" !important;
@@ -364,8 +371,8 @@ td {
   font-style: normal;
 }
 .docngam {
-  display: none;
+  
 }
 .carousels {
-  display: none;
+  
 }
