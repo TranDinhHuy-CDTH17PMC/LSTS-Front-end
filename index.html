@@ -52,81 +52,106 @@
                 </div>
                 <div class="main-bar">
                     <div class="main-bar__left">
-
-
-                        <div class="dropdown">
-                            <a href="#">
-                                <img src="images/icon-home2.png" />
-                                <p>Nhà trường <i class="fa fa-caret-down"></i></p>
-                            </a>
-                            <div class="dropdown-content">
-                                <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
-                                <a href="#">Link 4</a>
-                                <a href="#">Link 5</a>
+                        <button class="main-bar--menu" id="left-menu" onclick="closeMenuBar()">
+                            <i class="fas fa-list-ul"></i>
+                        </button>
+                        <div id="dropdown-list">
+                            <div class="dropdown">
+                                <a>
+                                    <img src="images/icon-home2.png" />
+                                    <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                                    <a href="#">Link 4</a>
+                                    <a href="#">Link 5</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="index.html">
-                                <img src="images/icon-chuongtrinh2.png" />
-                                <p>Chương trình <i class="fa fa-caret-down"></i></p>
-                            </a>
+                            <div class="dropdown">
+                                <a>
+                                    <img src="images/icon-chuongtrinh2.png" />
+                                    <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                                </a>
 
-                            <div class="dropdown-content">
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                                <a href="#">Link 5</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 3</a>
+                                    <a href="#">Link 4</a>
+                                    <a href="#">Link 5</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="index.html">
-                                <img src="images/icon-hocsinh2.png" />
-                                <p>Học sinh <i class="fa fa-caret-down"></i></p>
-                            </a>
+                            <div class="dropdown">
+                                <a href="#">
+                                    <img src="images/icon-hocsinh2.png" />
+                                    <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                                </a>
 
-                            <div class="dropdown-content">
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                                <a href="#">Link 5</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 3</a>
+                                    <a href="#">Link 4</a>
+                                    <a href="#">Link 5</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="index.html">
-                                <img src="images/icon-tuyensinh2.png" />
+                            <div class="dropdown">
+                                <a>
+                                    <img src="images/icon-tuyensinh2.png" />
+                                    <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                                </a>
+
+                                <div class="dropdown-content">
+                                    <a href="#">Link 3</a>
+                                    <a href="#">Link 4</a>
+                                    <a href="#">Link 5</a>
+                                </div>
+                            </div>
+                            <a>
+                                <img src="/images/icon-hoidap2.png" />
                                 <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
                             </a>
+                            <div class="dropdown">
+                                <a>
+                                    <img src="images/icon-lienhe2.png" />
+                                    <p>Liên hệ <i class="fa fa-caret-down"></i></p>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="dropdown-content">
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                                <a href="#">Link 5</a>
-                            </div>
-                        </div>
-                        <a href="index.html">
-                            <img src="/images/icon-hoidap2.png" />
-                            <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
-                        </a>
-                        <div class="dropdown">
-                            <a href="#">
-                                <img src="images/icon-lienhe2.png" />
-                                <p>Liên hệ <i class="fa fa-caret-down"></i></p>
-                            </a>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="main-bar--right">
                         <button class="main-bar--button"> <i class="fa fa-phone"></i> 0389320842</button>
-                        <button class="main-bar--menu">
+                        <button class="main-bar--menu" onclick="openNav()">
                             <i class="fas fa-list-ul"></i>
                         </button>
                     </div>
 
                 </div>
             </div>
+        </div>
+        <div class="menu-container--left">
+
+            <div id="sidenav-right" class="sidenav">
+                <button class="close-button" onclick="closeNav()"><i class="fa fa-times"></i>
+                </button>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+                <button class="dropdown-btn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <a href="#contact">Search</a>
+            </div>
+
         </div>
     </header>
     <section>
@@ -146,14 +171,15 @@
                 </div>
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                <div class="slide-circle" id="slide--index">
+                    <i class="fa fa-circle" onclick="currentSlide(1, 0)"></i>
+                    <i class="fa fa-circle" onclick="currentSlide(2, 0)"></i>
+                    <i class="fa fa-circle" onclick="currentSlide(3, 0)"></i>
+                    <i class="fa fa-circle" onclick="currentSlide(4, 0)"></i>
+                </div>
             </div>
 
-            <div class="slide-circle" id="slide--index">
-                <i class="fa fa-circle" onclick="currentSlide(1, 0)"></i>
-                <i class="fa fa-circle" onclick="currentSlide(2, 0)"></i>
-                <i class="fa fa-circle" onclick="currentSlide(3, 0)"></i>
-                <i class="fa fa-circle" onclick="currentSlide(4, 0)"></i>
-            </div>
+           
             <div class="notification">
                 <div class="notifi-container">
                     <div class="header notifi__header">
@@ -376,11 +402,13 @@
                             <img src="/images/slides/_MG_8385.JPG" rel="slides">
                         </div>
                     </div>
-                    <div class="slide-circle-2" id="slide--new">
-                        <i class="fa fa-circle" onclick="currentSlide(1, 1)"></i>
-                        <i class="fa fa-circle" onclick="currentSlide(2, 1)"></i>
-                        <i class="fa fa-circle" onclick="currentSlide(3, 1)"></i>
-                        <i class="fa fa-circle" onclick="currentSlide(4, 1)"></i>
+                    <div class="circle-wrapper">
+                        <div class="slide-circle-2" id="slide--new">
+                            <i class="fa fa-circle" onclick="currentSlide(1, 1)"></i>
+                            <i class="fa fa-circle" onclick="currentSlide(2, 1)"></i>
+                            <i class="fa fa-circle" onclick="currentSlide(3, 1)"></i>
+                            <i class="fa fa-circle" onclick="currentSlide(4, 1)"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -542,12 +570,13 @@
                         <li> <a href="#">Nhà trường</a></li>
                         <li> <a href="#">Nhà trường</a></li>
                     </ul>
-                 
+
                 </div>
             </div>
         </div>
 
     </footer>
+    <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

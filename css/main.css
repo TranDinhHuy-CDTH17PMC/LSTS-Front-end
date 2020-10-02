@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: myFirstFont;
   src: url(/font/UTM\ Avo.ttf);
@@ -18,7 +17,6 @@
   box-sizing: border-box;
 }
 
-
 .menu-container {
   height: 120px;
   border-bottom: 3px solid hsl(181, 99%, 34%);
@@ -30,8 +28,7 @@
   float: left;
   text-align: center;
 }
-.bar {
-}
+
 .top-bar {
   background-color: whitesmoke;
 }
@@ -50,14 +47,14 @@
 .top-bar__right > li {
   float: left;
   list-style-type: none;
-  border-right: 1px solid #EAEAEA;
+  border-right: 1px solid #eaeaea;
   padding: 0 18px;
   line-height: 40px;
 }
 .top-bar__left > li {
   float: right;
   list-style-type: none;
-  border-right: 1px solid #EAEAEA;
+  border-right: 1px solid #eaeaea;
   padding: 0 18px;
   line-height: 40px;
 }
@@ -65,23 +62,15 @@
   position: relative;
   /* height:  80px;
   overflow: hidden; */
-  
-}
-.main-bar__list {
-  width: fit-content;
-  overflow: hidden;
 }
 
-.main-bar__left{
-}
 
 .dropdown {
   float: left;
-  
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: black;
@@ -96,10 +85,9 @@
   position: absolute;
   min-width: 160px;
   width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 80px;
-  
 }
 
 .dropdown-content a {
@@ -109,7 +97,7 @@
   display: block;
   width: 100%;
   text-align: left;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .dropdown-content a:hover {
@@ -121,7 +109,7 @@
   display: block;
 }
 
-.main-bar__left  a{
+.main-bar__left a {
   float: left;
   display: block;
   line-height: 24px;
@@ -137,11 +125,10 @@
   margin-right: 15px;
 }
 
-.main-bar__left a:hover{
+.main-bar__left a:hover {
   color: hsl(181, 99%, 34%);
   border-bottom: 3px solid hsl(181, 99%, 34%);
 }
-
 
 .main-bar--right {
   float: left;
@@ -176,7 +163,6 @@
   color: white;
 }
 
-
 .footer--wrapper {
   background-color: #414141;
   display: flex;
@@ -185,31 +171,31 @@
   justify-content: center;
   text-align: left;
 }
-.information, .new__footer{
+.information,
+.new__footer {
   margin: 25px;
 }
-.info-list  {
+.info-list {
   width: 300px;
   font-size: 14px;
   margin-top: 15px;
 }
- .new__footer > .info-list {
-   width: auto;
- }
+.new__footer > .info-list {
+  width: auto;
+}
 
-.info-list  li  {
+.info-list li {
   list-style-type: none;
   font-size: 13px;
   line-height: 24.8px;
   font-weight: 600;
-  color:#65c2be;
+  color: #65c2be;
 }
 .info-list a {
   text-decoration: none;
   color: #65c2be;
- 
 }
-.info--header  {
+.info--header {
   width: 100%;
   font-family: AvoBold;
   text-transform: uppercase;
@@ -217,4 +203,109 @@
   color: white;
   padding-bottom: 5px;
   border-bottom: 2px solid white;
- }
+}
+/*------------SideBar-------*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #00aaad;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  padding: 16px 18px 6px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  background-color: #009699;
+}
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.active {
+  background-color: #5d9e9b;
+  color: white;
+}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #65c2be;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+.close-button {
+  outline: none;
+  border: #65c2be;
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+}
+.main-bar__left > #left-menu {
+  display: none;
+}
+.show {
+  display: block;
+}
+@media screen and (max-width: 1206px) {
+  .main-bar--button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-bar {
+    z-index: 1;
+  }
+  .main-bar__left  a  {
+    float: none;
+   
+  }
+  .show{
+    display: none;
+  }
+  .main-bar .dropdown  {
+    width: 100%;
+  }
+  .main-bar__left > #left-menu {
+    display: block;
+  }
+  .dropdown > .dropdown-content {
+    position: unset;
+    width: 100%;
+  }
+  .logo {
+    width: 80px;
+    height: 40px;
+  }
+  .logo > img {
+    width:80%;
+    height: 80%;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+ 
+}
