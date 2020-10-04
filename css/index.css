@@ -4,14 +4,18 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.6s;
+  animation-duration: 2.6s;
+  animation-timing-function: linear;
 }
 @keyframes fade {
   from {
-    opacity: 0.4;
+    
+    opacity: 0.5;
+    
   }
   to {
     opacity: 1;
+    
   }
 }.slideshows {
   position: relative;
