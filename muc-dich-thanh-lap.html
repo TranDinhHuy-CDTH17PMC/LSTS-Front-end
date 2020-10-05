@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index-menu.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic,500italic" rel="stylesheet"
+    type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+
+  <title>Trường THPT & THCS Đinh Thiện Lý</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-container">
+      <div class="logo">
+        <img src="images/logo-lsts.png" />
+      </div>
+      <div class="bar">
+        <div class="top-bar">
+          <div class="top-bar__right--wrapper">
+            <ul class="top-bar__right">
+              <li class="top-bar__item">
+                <img src="images/vi.gif" />
+              </li>
+              <li class="top-bar__item">
+                <img src="images/en.gif" />
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar__left--wrapper">
+            <ul class="top-bar__left">
+              <li class="top-bar__item">
+                <a><i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-bar">
+          <div class="main-bar__left">
+            <button class="main-bar--menu" id="left-menu" onclick="closeMenuBar()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+            <div id="dropdown-list">
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-home2.png" />
+                  <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-chuongtrinh2.png" />
+                  <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#">
+                  <img src="images/icon-hocsinh2.png" />
+                  <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-tuyensinh2.png" />
+                  <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <a>
+                <img src="/images/icon-hoidap2.png" />
+                <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+              </a>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-lienhe2.png" />
+                  <p>Liên hệ <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main-bar--right">
+            <button class="main-bar--button"> <i class="fa fa-phone"></i> 0389320842</button>
+            <button class="main-bar--menu" onclick="openNav()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="menu-container--left">
+
+      <div id="sidenav-right" class="sidenav">
+        <button class="close-button" onclick="closeNav()"><i class="fa fa-times"></i>
+        </button>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Search</a>
+      </div>
+
+    </div>
+  </header>
+  <section>
+    <div class="child-menu-container">
+      <div class="child-menu__wrapper">
+        <ul class="list-item">
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo
+            </a>
+
+          </li>
+          </li>
+          <li class="item"><a href="#">Thông báo
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#">Thông báo</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom__child-menu-container">
+      <div class="child-menu__wrapper">
+        <ul class="list-item">
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo
+              <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          </li>
+          <li class="item"><a href="#">Thông báo
+              <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#">Thông báo <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <div>
+          <p>Mục đích thành lập</p>
+
+        </div>
+      </div>
+      <div class="content">
+        <div class="content980">
+          <p style="text-align: justify;" data-metatip="true">Trường THCS và THPT Đinh Thiện Lý (Lawrence S.Ting School)
+            được thành lập vào năm 2008, là ngôi trường phi lợi nhuận do Công ty&nbsp;TNHH phát triển Phú Mỹ Hưng đầu tư
+            xây dựng.</p>
+          <p style="text-align: justify;">Trường mang tên vị cố chủ tịch Hội đồng quản trị tập đoàn CT&amp;D và Công ty
+            Liên doanh Phú Mỹ Hưng – Ông Đinh Thiện Lý (Tên tiếng Anh là Lawrence S.Ting) – người đã được Chủ tịch nước
+            cộng hòa xã hội chủ nghĩa Việt Nam Nguyễn Minh Triết ký quyết định truy tặng Huân chương hữu nghị ngày
+            28/12/2007.</p>
+          <p style="text-align: justify;">Năm 1989, ông Đinh Thiện Lý sang Việt Nam và bắt đầu hành trình gian nan nhưng
+            đầy ý nghĩa. Với tầm nhìn xa trông rộng, nghị lực phi thường và lòng quả cảm hiếm có, ông quyết định đầu tư
+            với quy mô lớn trên mảnh đất hoang hóa, nghèo nàn. Ông đã dẫn dắt một tập thể miệt mài tạo dựng một sự đổi
+            thay. Sau hai mươi năm nỗ lực, cái không thể đã trở thành có thể, vùng đất hoang hóa nghèo nàn xưa đã trở
+            thành một khu công nghiệp, khu đô thị hiện đại trù phú ngày hôm nay.</p>
+          <p style="text-align: justify;">Bốn đề án quan trọng của ông Đinh Thiện Lý được Đảng và nhà nước Việt Nam đánh
+            giá cao là: Khu chế xuất Tân Thuận, Nhà máy điện Hiệp Phước, Đô thị mới Nam Sài Gòn và chương trình trồng
+            60.000 hecta rừng ở Kiên Giang.</p>
+          <p style="text-align: justify;">Ông Đinh Thiện Lý là một doanh nhân nước ngoài, đầu tư vào Việt Nam. Tuy
+            nhiên, những gì ông làm được cho Việt Nam quả thực là ấn tượng và rất đáng khâm phục. Lúc sinh thời, ông
+            luôn quan tâm đến giáo dục với niềm tin: nhân tài là vốn quý của một quốc gia, chăm lo đào tạo nhân tài sẽ
+            đem đến phồn vinh cho đất nước.</p>
+          <p style="text-align: justify;">Sau khi ông qua đời, gia đình ông và Công ty Phú Mỹ Hưng đã thành lập Quỹ hỗ
+            trợ cộng đồng Lawrence S.Ting với mục đích góp phần sẻ chia đối với những mảnh đời bất hạnh, những cuộc sống
+            đói nghèo đồng thời mang đến đóng góp tích cực cho giáo dục của Việt Nam trước giai đoạn hội nhập và phát
+            triển.</p>
+          <p style="text-align: justify;">Năm 2006, Công ty Phú Mỹ Hưng đã quyết định thực hiện dự án xây dựng ngôi
+            trường phi lợi nhuận mang tên ông Đinh Thiện Lý để thể hiện tình yêu mà ông dành cho đất nước Việt Nam, sự
+            quan tâm mà ông dành cho thế hệ trẻ Việt Nam – Trường THCS và THPT Đinh Thiện Lý.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer--wrapper">
+      <div class="information">
+        <div class="info--header">Trường THCS và THPT Đinh Thiện Lý</div>
+        <div class="info-list">
+          <ul>
+            <li><i class="fa fa-user"></i> 80 Nguyễn Hữu Cảnh, Phường Tân Phong, Quận 7, Thành phố Hồ Chí
+              Minh</li>
+            <li><i class="fa fa-user"></i> Tel: (028) 5411-0040 ; Fax: (028) 5411-0039</li>
+            <li><i class="fa fa-user"></i> E-mail: info@lsts.edu.vn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="new__footer">
+        <div class="info--header">Tin tức</div>
+        <div class="info-list">
+          <ul>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Giáo viên</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+
+
+</html>

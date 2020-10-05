@@ -13,7 +13,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: myFirstFont;
+  font-family: myFirstFont,sans-serif;
   box-sizing: border-box;
 }
 
@@ -59,6 +59,7 @@
   line-height: 40px;
 }
 .main-bar {
+
   position: relative;
   /* height:  80px;
   overflow: hidden; */
@@ -75,7 +76,7 @@
   outline: none;
   color: black;
   padding: 14px 16px;
-  background-color: inherit;
+  background-color: white;
   font-family: inherit;
   margin: 0;
 }
@@ -123,6 +124,8 @@
   outline: none;
   height: 100%;
   margin-right: 15px;
+  background-color: white;
+
 }
 
 .main-bar__left a:hover {

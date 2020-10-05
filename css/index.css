@@ -268,7 +268,8 @@ td {
   line-height: 22.4px;
 }
 .new__warraper {
-  
+  height: 80%;
+  width: 80%;
   position: absolute;
   padding-bottom: 50px;
   left: 50%;
@@ -293,11 +294,15 @@ td {
 .new__slides {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  
+}
+.slide__wrapper {
+  width: 100%;
+  
 }
 .new__content {
-  width: 350px;
-  height: 75px;
+  max-width:  350px;
+  height: 100px;
   padding: 0px 50px 0px 25px;
   float: left;
 }
@@ -312,7 +317,15 @@ td {
   font-weight: 500;
   line-height: 2.4px;
 }
-
+.new__img {
+  width: 100%;
+}
+.new__img img {
+  float: right;
+  width: 50%;
+  height: 50%;
+  margin-left: 15px;
+}
 
 .new__slides > .slide-circle-2 {
   color: black;
@@ -345,14 +358,7 @@ td {
   color: red;
   text-decoration: none;
 }
-.new__img {
-  width: 100%;
-}
-.new__img img {
-  float: right;
-  width: 50%;
-  height: 50%;
-}
+
 .top-student {
   width: 100%;
 }
@@ -577,7 +583,7 @@ td {
   }
   
   .new__img img {
-    display: none;
+  display: none;
   }
   .card--right {
     right: 0;
@@ -591,6 +597,11 @@ td {
     line-height: normal;
 
   }
-  
+  .new__text {
+    font-size: 2vh;
+  }
+  .new__title a {
+    font-size: 14px;
+  }
  
 }
