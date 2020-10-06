@@ -9,21 +9,35 @@
 }
 @keyframes fade {
   from {
-    
     opacity: 0.5;
-    
   }
   to {
     opacity: 1;
-    
   }
-}.slideshows {
+}
+.slideshows {
   position: relative;
 }
 .slide > img {
   width: 100%;
   height: 100%;
 }
+.slide-circle > i {
+  background-color: #16c0c3;
+  border: 2px solid #16c0c3;
+  border-radius: 50%;
+  color: #16c0c3;
+  transition: all 0.6s ease;
+}
+.slide-circle > i:hover {
+  color: transparent;
+  background-color: transparent;
+}
+.slide-circle .active {
+  color: transparent;
+  background-color: transparent;
+}
+
 .slide-circle {
   position: absolute;
   top: 5px;
@@ -34,13 +48,10 @@
 .slide-circle > .fa {
   font-size: 15px;
   border-radius: 50%;
-  background-color: gray;
-  color: gray;
 }
 .slide-circle > .fa:hover {
   border-radius: 50%;
-  border: 2px solid gray;
-  background-color: gray;
+
   color: #d3e4e4;
 }
 .prev,
@@ -68,12 +79,12 @@
   background-color: black;
   color: #fff;
 }
-.slide-circle .active {
+/* .slide-circle .active {
   border-radius: 50%;
   border: 5px solid gray;
   background-color: white;
   color: white;
-}
+} */
 .notification {
   display: block;
   width: 980px;
@@ -209,10 +220,9 @@ td {
 .card {
   margin: 0px 15px;
 }
-.card h3{
+.card h3 {
   font-style: italic;
   font-family: "UTMAmericana";
- 
 }
 .card--event {
   background-color: #8080803b;
@@ -236,7 +246,6 @@ td {
   text-align: center;
   padding: 5px;
   border-radius: 0px 0px 15px 15px;
-
 }
 .time__text {
   font-size: 18px;
@@ -258,9 +267,10 @@ td {
 }
 /*------New------*/
 .new {
-  height: 619px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
   background-color: #d3e4e4;
-  position: relative;
 }
 .new__title {
   padding-top: 4px;
@@ -268,16 +278,17 @@ td {
   line-height: 22.4px;
 }
 .new__warraper {
+  padding: 34px 16px;
+  margin: 15px auto;
   height: 80%;
   width: 80%;
-  position: absolute;
-  padding-bottom: 50px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   background-color: #ffffff;
-  border: 8px dashed black;
-  outline: 14px solid hsl(196, 80%, 40%);
+  border:8px groove hsl(196deg 80% 40%);
+}
+
+.new__slides {
+
+  width: 100%;
 }
 .header__wrapper {
   text-align: center;
@@ -288,20 +299,10 @@ td {
   border: 1px dashed hsl(196, 80%, 40%);
   padding: 0px 15px;
   border-radius: 5px;
-
 }
 
-.new__slides {
-  width: 100%;
-  height: 100%;
-  
-}
-.slide__wrapper {
-  width: 100%;
-  
-}
 .new__content {
-  max-width:  350px;
+  max-width: 350px;
   height: 100px;
   padding: 0px 50px 0px 25px;
   float: left;
@@ -331,12 +332,10 @@ td {
   color: black;
 }
 .circle-wrapper {
-  bottom: 5px;
-  left: 50%;
-  position: absolute;
   width: 100%;
 }
 .slide-circle-2 > i {
+  font-size: 9px;
   background-color: #16c0c3;
   border: 2px solid #16c0c3;
   border-radius: 50%;
@@ -357,6 +356,7 @@ td {
   font-weight: bold;
   color: red;
   text-decoration: none;
+  font-style: italic;
 }
 
 .top-student {
@@ -520,6 +520,7 @@ td {
   }
   .new__warraper {
     outline: none;
+    border: none;
     width: 100%;
   }
   .new__slides {
@@ -529,42 +530,38 @@ td {
   .card-list {
     display: block;
   }
-  .card__wrapper{
+  .card__wrapper {
     width: fit-content;
   }
   .card--event {
     float: none;
   }
-  .card{
-    margin:15px auto;
+  .card {
+    margin: 15px auto;
   }
   .carousels {
-    
     display: flex;
     flex-flow: row wrap;
-
   }
-  .prev, .next {
+  .prev,
+  .next {
     display: none;
   }
   .slide-circle {
-    top:80%;
-  
+    top: 80%;
   }
- 
 }
 @media screen and (max-width: 600px) {
-  .footer--wrapper{
-    display: block;
+  .notifi__header {
+    margin: 0;
   }
-  
   .event__header::after {
     width: 50px;
   }
   .event__header::before {
     width: 50px;
   }
-  .card--event{
+  .card--event {
     float: none;
   }
   .card--docngam {
@@ -572,36 +569,33 @@ td {
     width: fit-content;
     padding: 0;
   }
-  
- .img__docngam {
-   display: none;
-   
+
+  .img__docngam {
+    display: none;
   }
   .header--docngam {
-    margin:0;
+    margin: 0;
     float: none;
   }
-  
+
   .new__img img {
-  display: none;
+    display: none;
   }
   .card--right {
     right: 0;
   }
   .header {
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;
   }
   .notifi__content {
     font-size: 12px;
     line-height: normal;
-
   }
   .new__text {
-    font-size: 2vh;
+    font-size: 1.7vh;
   }
   .new__title a {
     font-size: 14px;
   }
- 
 }
