@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index-menu.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic,500italic" rel="stylesheet"
+    type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+
+  <title>Trường THPT & THCS Đinh Thiện Lý</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-lsts.png" /></a>
+      </div>
+      <div class="bar">
+        <div class="top-bar">
+          <div class="top-bar__right--wrapper">
+            <ul class="top-bar__right">
+              <li class="top-bar__item">
+                <img src="images/vi.gif" />
+              </li>
+              <li class="top-bar__item">
+                <img src="images/en.gif" />
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar__left--wrapper">
+            <ul class="top-bar__left">
+              <li class="top-bar__item">
+                <a><i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-bar">
+          <div class="main-bar__left">
+            <button class="main-bar--menu" id="left-menu" onclick="closeMenuBar()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+            <div id="dropdown-list">
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-home2.png" />
+                  <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-chuongtrinh2.png" />
+                  <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#">
+                  <img src="images/icon-hocsinh2.png" />
+                  <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-tuyensinh2.png" />
+                  <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <a>
+                <img src="/images/icon-hoidap2.png" />
+                <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+              </a>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-lienhe2.png" />
+                  <p>Liên hệ <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main-bar--right">
+            <button class="main-bar--button"> <i class="fa fa-phone"></i> 0389320842</button>
+            <button class="main-bar--menu" onclick="openNav()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="menu-container--left">
+
+      <div id="sidenav-right" class="sidenav">
+        <button class="close-button" onclick="closeNav()"><i class="fa fa-times"></i>
+        </button>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Search</a>
+      </div>
+
+    </div>
+  </header>
+  <section>
+    <div class="child-menu-container">
+      <div class="child-menu__wrapper">
+        <ul class="list-item">
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo
+            </a>
+
+          </li>
+          </li>
+          <li class="item"><a href="#">Thông báo
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#">Thông báo</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom__child-menu-container">
+      <div class="child-menu__wrapper">
+        <ul class="list-item">
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo
+              <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          </li>
+          <li class="item"><a href="#">Thông báo
+              <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#">Thông báo <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <p>Danh sách link</p>
+      </div>
+      <div class="content">
+        <ul class="link--list__item">
+          <li class="link--item">
+            <a href="#">Tuyển dụng nhân viên y tế</a>
+            <p class="show__content">Để chuẩn bị nhân sự cho năm học mới 2020-2021, Trường THCS và THPT Đinh Thiện Lý
+              cần tuyển Giáo viên các môn: Toán, Văn, Anh Văn, Tin học, Giáo dục công dân, Địa lý. Thông tin cụ thể như
+              sau:</p>
+          </li>
+          <li class="link--item"><a href="#">Tuyển dụng nhân viên y tế</a>
+            <p class="show__content">Để chuẩn bị nhân sự cho năm học mới 2020-2021, Trường THCS và THPT Đinh Thiện Lý
+              cần tuyển Giáo viên các môn: Toán, Văn, Anh Văn, Tin học, Giáo dục công dân, Địa lý. Thông tin cụ thể như
+              sau:</p>
+          </li>
+          <li class="link--item"><a href="#">Tuyển dụng nhân viên y tế</a>
+            <p class="show__content">Để chuẩn bị nhân sự cho năm học mới 2020-2021, Trường THCS và THPT Đinh Thiện Lý
+              cần tuyển Giáo viên các môn: Toán, Văn, Anh Văn, Tin học, Giáo dục công dân, Địa lý. Thông tin cụ thể như
+              sau:</p>
+          </li>
+          <li class="link--item"><a href="#">Tuyển dụng nhân viên y tế</a>
+            <p class="show__content">Để chuẩn bị nhân sự cho năm học mới 2020-2021, Trường THCS và THPT Đinh Thiện Lý
+              cần tuyển Giáo viên các môn: Toán, Văn, Anh Văn, Tin học, Giáo dục công dân, Địa lý. Thông tin cụ thể như
+              sau:</p>
+          </li>
+          <li class="link--item"><a href="#">Tuyển dụng nhân viên y tế</a>
+            <p class="show__content">Để chuẩn bị nhân sự cho năm học mới 2020-2021, Trường THCS và THPT Đinh Thiện Lý
+              cần tuyển Giáo viên các môn: Toán, Văn, Anh Văn, Tin học, Giáo dục công dân, Địa lý. Thông tin cụ thể như
+              sau:</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <p>Thực đơn</p>
+      </div>
+      <div class="content content-2">
+        <ul class="link--list__item">
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+        </ul>
+        <div class="pagination">
+          <ul>
+            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="section-container">
+      <div class="header header--center">
+        <p> <img src="/images/Title/icon-title.png"> Thực đơn <img src="/images/Title/icon-title.png"></p>
+      </div>
+      <div class="content content-3">
+        <div class="table--main">
+          <table>
+            <thead>
+              <tr>
+                <th>Số hiệu</th>
+                <th>Ngày ban hành</th>
+                <th>Văn bản</th>
+                <th>Download</th>
+                <th>Ngày ban hành</th>
+                <th>Văn bản</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>55/2019/QH16</td>
+                <td>
+                  Sửa đổi, bổ sung một Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, optio fuga
+                  officiis beatae totam excepturi est sunt! Inventore minus necessitatibus ipsam id, quos iure,
+                  praesentium quam dolore ratione consectetur voluptatibus! số điều của Luật Kiểm toán nhà nước</td>
+                <td>Sửa đổi, bổ sung một số điều của Luật Kiểm toán nhà nước </td>
+                <td>file </td>
+                <td>file </td>
+                <td>file </td>
+                <td style="text-align:center">
+                  <a href="/images/6d5bf4e07eae718f41e887df8cb394f7_S.jpg"><img src="/images/icon-download.png" alt=""
+                      download></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Số hiệu</td>
+                <td>ngày ban hành</td>
+                <td>file </td>
+                <td>file </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <ul>
+            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <p>Thực đơn</p>
+      </div>
+      <div class="content content-4">
+        <ul class="link--list__item">
+          <li>
+            <div class="item">
+              <div class="date">
+                <p class="date--large">05</p>
+                <p class="date--small">07-2019</p>
+              </div>
+              <div class="text-content">
+
+                <a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, maxime facilis. Consectetur
+                  dolores culpa vel obcaecati? Debitis consequuntur magni vel eius sit, dolore adipisci hic consequatur
+                  neque, vitae eligendi. Quod!</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <div class="date">
+                <p class="date--large">05</p>
+                <p class="date--small">07-2019</p>
+              </div>
+              <div class="text-content">
+                <a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quo quas animi alias iste, eligendi
+                  quidem a, accusantium saepe ullam odio beatae error nisi eveniet! Omnis quaerat quod natus eveniet!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+          <li><a href="#">[Năm học 2020-2021] Thực đơn tuần 10 (từ 26.10.2020 đến 31.10.2020)</a></li>
+        </ul>
+        <div class="pagination">
+          <ul>
+            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <p>Content 5</p>
+      </div>
+      <div class="content content-5">
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/Dau_an_10_nam/84dcf8a8cba0259cf11299c1eef358f9_L.jpg">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+              <i class="fa fa-quote-right"></i>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--center">
+        <p> <img src="/images/Title/icon-title.png"> Content 6 <img src="/images/Title/icon-title.png"></p>
+      </div>
+      <div class="content content-6">
+        <div class="content-wrapper">
+          <div class="content__title">
+            <p>TRƯỜNG THCS VÀ THPT ĐINH THIỆN LÝ </p>
+          </div>
+          <div class="content__text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut temporibus nostrum quasi totam nobis neque
+              labore facere suscipit blanditiis molestiae deserunt tempora qui at quibusdam, mollitia impedit amet earum
+              <a href="#" class="">link thong tin</a>
+              inventore!
+            </p>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="content__title">
+            <p>TRƯỜNG THCS VÀ THPT ĐINH THIỆN LÝ </p>
+          </div>
+          <div class="content__text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut temporibus nostrum quasi totam nobis neque
+              labore facere suscipit blanditiis molestiae deserunt tempora qui at quibusdam, mollitia impedit amet earum
+              <a href="#" class="">link thong tin</a>
+              inventore!
+            </p>
+          </div>
+        </div>
+
+        <div class="form--main">
+          <form action="#">
+            <div class="form__row">
+              <div class="form__col">
+                <div class="input__wrapper">
+                  <input type="text" placeholder="Tên đăng nhập">
+                </div>
+              </div>
+
+              <div class="form__col">
+                <div class="input__wrapper">
+                  <input type="text" placeholder="Tên đăng nhập">
+                </div>
+              </div>
+
+            </div>
+            <div class="form__row">
+              <div class="form__col">
+                <div class="input__wrapper">
+                  <i class="fa fa-user"></i>
+                  <input type="text" name="username" placeholder="Nhập tên">
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="input__wrapper select__wrapper">
+                  <select name="" id="">
+                    <option value="">value001</option>
+                    <option value="">value002</option>
+                    <option value="">value003</option>
+                    <option value="">value004</option>
+                    <option value="">value005</option>
+                    <option value="">value006</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__col form__col--center">
+                <div class="input__wrapper">
+                  <textarea></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__col form__col--center">
+                <button class="btn--submit"><i class="fa fa-check"></i> Đồng ý</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <p>Content 7</p>
+      </div>
+      <div class="header header--center">
+        <p>Content 7</p>
+      </div>
+      <div class="content content-5 content-7">
+        <div class="card">
+          <div class="card__img">
+            <div class="card--gradient-2"></div>
+            <!-- <img src="/images/Dau_an_10_nam/84dcf8a8cba0259cf11299c1eef358f9_L.jpg"> -->
+          </div>
+          <div class="card__text">
+            <div class="card__avatar">
+              <img src="/images/avatar/5429392c5436b71b38815039a5521479_M.jpg">
+            </div>
+            <div class="card__title">
+              <a>TRẦN NGUYỄN HIẾU NGHĨA - LỚP 12I4</a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Libero, similique expedita quidem quis beatae
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <div class="card--gradient-1"></div>
+            <!-- <img src="/images/backgroud/bg_4.jpg"> -->
+          </div>
+          <div class="card__text">
+            <div class="card__avatar">
+              <img src="/images/avatar/2dd8c4ee50377b1c53cd84c0e83bdbd2_M.jpg">
+            </div>
+            <div class="card__title">
+              <a>TRẦN NGUYỄN HIẾU NGHĨA - LỚP 12I4</a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Libero, similique expedita quidem quis beatae
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img src="/images/Dau_an_10_nam/84dcf8a8cba0259cf11299c1eef358f9_L.jpg">
+          </div>
+          <div class="card__text">
+            <div class="card__avatar">
+              <img src="/images/avatar/62d8a0a826023e1f0111f69f3b6a2d59_M.jpg">
+            </div>
+            <div class="card__title">
+              <a>NGUYỄN THỤY PHƯƠNG ANH - LỚP 10I2</a></div>
+            <div class="card__body">
+              <p>Học bổng Lawrence S. Ting - Học kỳ 1, Năm học 2020-2021
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer--wrapper">
+      <div class="information">
+        <div class="info--header">Trường THCS và THPT Đinh Thiện Lý</div>
+        <div class="info-list">
+          <ul>
+            <li><i class="fa fa-user"></i> 80 Nguyễn Hữu Cảnh, Phường Tân Phong, Quận 7, Thành phố Hồ Chí
+              Minh</li>
+            <li><i class="fa fa-user"></i> Tel: (028) 5411-0040 ; Fax: (028) 5411-0039</li>
+            <li><i class="fa fa-user"></i> E-mail: info@lsts.edu.vn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="new__footer">
+        <div class="info--header">Tin tức</div>
+        <div class="info-list">
+          <ul>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Giáo viên</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+
+
+</html>
