@@ -1,0 +1,161 @@
+.event-card {
+  background-color: rgb(214, 214, 214);
+  height: 200px;
+  margin: 4px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.event__year-month{
+  background-color: orange;
+  width:200px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto;
+  color: white;
+  border-radius: 14px;
+  ;
+}
+.event__year > p {
+  font-family: AvoBold;
+  font-size: 50px;
+
+}
+.event__month{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(247, 244, 240, 0.288);
+}
+.event__month >p {
+  padding: 5px;
+  font-size: 35px;
+}
+.event__month button {
+  margin: 15px;
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  background-color: orange;
+  cursor: pointer;
+  width: 56px;
+}
+.event__month button:hover { 
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  
+}
+.event__month i {
+  font-size: 35px;
+  padding: 0px 15px;
+}
+.event-card--blue {
+  background-color: rgb(0, 132, 255);
+  color: white;
+}
+
+.event-card--orange {
+  background-color: orange;
+}
+
+.event-card--green {
+  background-color: green;
+}
+
+.event-card--red {
+  background-color: red;
+}
+
+.event-card--violet {
+  background-color: violet;
+}
+
+.event__date>p {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.event__body {
+  padding: 9px;
+  background-color: rgba(243, 239, 239, 0.548);
+  height: 200px;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: .4s ease-in;
+  overflow: auto;
+
+}
+
+/* .event-card:hover .event__date>p {
+  display: none;
+} */
+
+.event-card:hover  {
+  -webkit-box-shadow: 10px 11px 5px -6px rgba(138,134,138,1);
+  -moz-box-shadow: 10px 11px 5px -6px rgba(138,134,138,1);
+  box-shadow: 10px 11px 5px -6px rgba(138,134,138,1);
+}
+
+.content-8 td:hover {
+  
+  transform: scale(1.2);
+  background-color: transparent;
+  transition: .5s ease;
+
+}
+
+.table--main table tr:hover td,
+th {
+  background-color: transparent;
+}
+
+.content-8 {
+  width: 90%;
+  justify-content: center;
+}
+
+.content-8 td {
+  padding: 2px;
+  border: none;
+  width: 200px;
+  overflow: hidden;
+}
+
+.content-8 .table--main {
+  overflow: visible;
+}
+.list--bg {
+  margin:15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content-8 .list-item {
+ width: 300px;
+}
+.list-item i {
+  float: left;
+  padding: 6px;
+  color: gainsboro;
+}
+.cl-red i{
+  color: red;
+}
+.cl-green i{
+  color: green;
+}
+.cl-violet i {
+  color: violet;
+}
+.cl-blue i {
+  color: rgb(0, 132, 255);
+}
+.cl-orange i {
+  color:orange
+}
+@media screen and (max-width:992px){
+  .content-8 .table--main {
+    overflow: auto;
+  }
+}

@@ -109,7 +109,7 @@
 }
 
 .content p {
-  margin: 0 0 25px;
+  margin: 0 0 15px;
   /* //font-family: Avo, sans-serif !important; */
   font-weight: 400px;
 }
@@ -214,18 +214,11 @@ td {
 
 }
 
-.table--main th,
-td {
-  overflow: auto;
-}
 
-tr:nth-child(even) {
-  background-color: #c51818;
-}
 
-.table--main table tr:hover td,
+.table--main table tr:hover  td,
 th {
-  background-color: whitesmoke;
+  background-color: gainsboro;
 
 
 }
@@ -308,7 +301,7 @@ th {
 .card:hover {
   background-color: #ffffff;
   transform: scale(1.2);
-  border: 3px solid gainsboro;
+  border: 1px solid gainsboro;
   z-index: 1;
 }
 
