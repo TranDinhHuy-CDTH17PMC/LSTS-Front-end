@@ -207,11 +207,16 @@
 th,
 td {
   border: 1px solid hsl(181deg 99% 34%);
-  padding: 15px;
+  padding: 8px 15px 3px 15px;
   background-color: #ffffff;
   font-size: 14px;
   cursor: pointer;
 
+}
+
+.table--main th,
+td {
+  overflow: auto;
 }
 
 tr:nth-child(even) {
@@ -237,10 +242,11 @@ th {
 
 }
 
+
+
 .table--main {
   width: 100%;
   overflow: auto;
-  max-height: 700px;
 }
 
 /* .content-3 {
@@ -313,12 +319,13 @@ th {
   background: rgb(63, 94, 251);
   background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }
+
 .card--gradient-2 {
   width: 100%;
   height: 200px;
   border-radius: 12px 12px 0px 0px;
-  background: rgb(34,193,195);
-  background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: rgb(34, 193, 195);
+  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .card__title {
@@ -390,7 +397,10 @@ th {
   font-family: Avo;
 }
 
-
+.form--main {
+  width: 100%;
+  justify-content: center;
+}
 
 .form__row {
   display: flex;
@@ -410,11 +420,17 @@ th {
   color: gray;
 }
 
-.input__wrapper>input:focus,
-.input__wrapper>textarea:focus {
+.input__wrapper>input:focus {
   border: none;
   padding: 15px 15px 4px 15px;
   border-bottom: 3px solid hsl(181deg 99% 34%);
+  transition: .2s ease;
+}
+
+.input__wrapper>textarea:focus {
+  border: none;
+  padding: 15px 15px 4px 15px;
+  border-top: 3px solid hsl(181deg 99% 34%);
   transition: .2s ease;
 }
 
@@ -436,11 +452,6 @@ th {
   font-family: Lora;
 }
 
-/* .form__col input[name='username'] {
-  text-transform: uppercase;
-  
-} */
-
 .form__col textarea {
   border: none;
   outline: none;
@@ -451,12 +462,14 @@ th {
   background-color: transparent;
   font-style: italic;
   font-family: Lora;
-  
+
 }
-.form__col select, option{
+
+.form__col select,
+option {
   height: 40px;
   width: 100%;
-  padding-left: 15px;
+  padding: 0 15px;
   font-size: 16px;
   border: none;
   outline: none;
@@ -464,11 +477,18 @@ th {
   font-style: italic;
   font-family: Lora;
 }
+
 .form__col select option {
   padding: 15px;
 }
+
 .form__col--center {
   text-align: center;
+}
+
+.form__col-3 {
+  width: 30%;
+  padding: 0 15px;
 }
 
 .btn--submit {
@@ -495,6 +515,12 @@ th {
   padding: 15px 15px 4px 15px;
   border-bottom: 3px solid hsl(181deg 99% 34%);
 } */
+@media screen and (max-width: 1024px) {
+  .content {
+    width: 97%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .content {
     width: 90%;
@@ -585,6 +611,9 @@ th {
   .card:hover {
     transform: none;
     border: none;
+  }
+  .table--main {
+    max-width: 400px;
   }
 
 }
