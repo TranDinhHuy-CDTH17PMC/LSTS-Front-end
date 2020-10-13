@@ -36,12 +36,14 @@ function showSlide(no) {
   setTimeout(showSlide, 3000, no);
 
 }
+
 function showSlideNumber(n, no) {
   var i = 0;
   var slides = document.getElementsByClassName(classNames[no]);
   var dots = document.getElementById(dotIndexs[no]).getElementsByClassName("fa-circle");
+  console.log(slideIndex);
   if (n < 1) {
-    slideIndex = slideIndex.length;
+    slideIndex[no] = slideIndex.length;
   }
   if (n > slides.length) {
     slideIndex[no] = 1;
@@ -53,7 +55,6 @@ function showSlideNumber(n, no) {
   for (i = 0; i < slides.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-
 
   slides[slideIndex[no] - 1].style.display = "block";
   dots[slideIndex[no] - 1].className += " active";

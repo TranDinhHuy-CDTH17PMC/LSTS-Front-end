@@ -79,7 +79,7 @@
 .event__body {
   padding: 9px;
   background-color: rgba(243, 239, 239, 0.548);
-  height: 200px;
+  height: 160px;
   border-radius: 14px;
   font-weight: bold;
   transition: .4s ease-in;
@@ -158,4 +158,13 @@ th {
   .content-8 .table--main {
     overflow: auto;
   }
+  
 }
+@media screen and (max-width:400px){
+  .event__body{
+    display: none;
+  }
+  .event-card{
+    height: auto;
+    margin: 0;
+  }

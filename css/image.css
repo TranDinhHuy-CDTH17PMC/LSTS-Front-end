@@ -1,0 +1,9 @@
+
+.video__img a::after { 
+  display: none;
+}
+@media screen and (max-width: 992px) {
+ .content-9 {
+   width: 98%;
+ }
+}

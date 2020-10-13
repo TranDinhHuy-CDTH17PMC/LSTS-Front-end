@@ -54,7 +54,7 @@
 
 .item:hover .dropdown-content {
   display: block;
-  animation: down 0.2s ease-in;
+  animation: down 0.3s ease-in;
 }
 
 @keyframes down {
@@ -110,7 +110,6 @@
 
 .content p {
   margin: 0 0 15px;
-  /* //font-family: Avo, sans-serif !important; */
   font-weight: 400px;
 }
 
@@ -176,7 +175,10 @@
   color: white;
   background-color: hsl(181deg 99% 34%);
 }
-
+.pagination .active {
+  color: white;
+  background-color: hsl(181deg 99% 34%);
+}
 .content-2 ul li {
   margin: 15px 0px;
 }
