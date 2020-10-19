@@ -175,10 +175,12 @@
   color: white;
   background-color: hsl(181deg 99% 34%);
 }
+
 .pagination .active {
   color: white;
   background-color: hsl(181deg 99% 34%);
 }
+
 .content-2 ul li {
   margin: 15px 0px;
 }
@@ -218,7 +220,7 @@ td {
 
 
 
-.table--main table tr:hover  td,
+.table--main table tr:hover td,
 th {
   background-color: gainsboro;
 
@@ -505,11 +507,105 @@ option {
   background-color: transparent;
 }
 
-/* .form__col input:focus {
-  border: none;
-  padding: 15px 15px 4px 15px;
-  border-bottom: 3px solid hsl(181deg 99% 34%);
-} */
+/* TimeLine */
+.content--timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content--timeline::after {
+  margin: 15px 15px 15px 0px;
+  content: '';
+  position: absolute;
+  width: 6px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  background-color: #1e8fb9;
+}
+
+.time-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.time-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #1e8fb9;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #1e8fb9;
+
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #1e8fb9;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #1e8fb9 transparent transparent;
+
+}
+
+.right::after {
+  left: -16px;
+}
+
+.timeline__body {
+  background-color: rgba(235, 232, 232, 0.61);
+  position: relative;
+  border-radius: 6px;
+  -webkit-box-shadow: 18px 19px 42px -8px rgba(0,0,0,0.37);
+  -moz-box-shadow: 18px 19px 42px -8px rgba(0,0,0,0.37);
+  box-shadow: 18px 19px 42px -8px rgba(0,0,0,0.37);
+}
+
+.timeline__body>p {
+  padding: 20px 30px;
+}
+
+.timeline__title {
+  color: #ffffff;
+  text-align: center;
+  background-color: #1e8fb9;
+  border-bottom: 2px solid #1e8fb9;
+}
+
 @media screen and (max-width: 1024px) {
   .content {
     width: 97%;
@@ -587,6 +683,36 @@ option {
 
   }
 
+  /* Place the timelime to the left */
+  .content--timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .time-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .time-container::before {
+    left: 60px;
+    border: medium solid #1e8fb9;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1e8fb9 transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 
 }
 
@@ -607,6 +733,7 @@ option {
     transform: none;
     border: none;
   }
+
   .table--main {
     max-width: 400px;
   }
