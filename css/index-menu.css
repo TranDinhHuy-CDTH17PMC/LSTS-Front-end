@@ -587,7 +587,7 @@ option {
 }
 
 .timeline__body {
-  background-color: rgba(235, 232, 232, 0.61);
+  background-color: rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 6px;
   -webkit-box-shadow: 18px 19px 42px -8px rgba(0, 0, 0, 0.37);
@@ -616,7 +616,7 @@ option {
 .circle__info {
   display: grid;
   justify-content: center;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   grid-gap: 10px;
 }
 
@@ -629,7 +629,8 @@ option {
   border-radius: 50%;
   margin: 0 auto;
 }
-.info__block::before{
+
+.info__block::before {
   position: absolute;
   text-align: center;
   color: hsl(181deg 99% 34%);
@@ -641,10 +642,12 @@ option {
   border: 2px solid hsl(181deg 99% 34%);
   padding: 5px;
 }
+
 .info__block:nth-of-type(1) {
   grid-area: 1 / 2 / 3 / 3;
 
 }
+
 .info__block:nth-of-type(2)::before {
   content: '1';
 }
@@ -668,6 +671,7 @@ option {
 .info__block:nth-of-type(7)::before {
   content: '6';
 }
+
 /* 
 .info__block:nth-of-type(2) {}
 
@@ -680,13 +684,40 @@ option {
 .info__block:nth-of-type(6) {}
 
 .info__block:nth-of-type(7) {} */
+.section-container {
+  background-image: url('../images/bg_tamnhin.png') no-repeat bottom center;
+  background-size: 100%;
+  width: 100%;
+}
 
+.content--text {
+  background-image: transparent url(/images/bg_tamnhin.png) top center no-repeat !important;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.212);
+  margin: 15px auto;
+}
+
+.content--text img {
+  width: 25%;
+  height: 25%;
+}
+
+.content--text p {
+  font-family: Lora, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 200;
+  margin-top: 15px;
+}
+.content--text  .title {
+  font-family: AvoBold;
+  font-size: 26px;
+  text-transform: uppercase;
+}
 .info__block ul {
   border: 2px solid hsl(181deg 99% 34%);
   padding: 15px;
   margin: 5px;
   border-radius: 8px;
-  background-color: #ebebeb79;
+  background-color: #ffff;
 }
 
 .info__block p {
@@ -705,6 +736,18 @@ option {
   line-height: normal;
   margin: 0;
   border: none;
+}
+.music {
+  width: 100%;
+  margin: 15px;
+}
+.music__src {
+ display: inline;
+ vertical-align: baseline;
+
+ 
+}
+.music audio {
 }
 
 
@@ -759,7 +802,7 @@ option {
   }
 
   .circle__info {
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
   }
 
   .circle__img {
@@ -775,6 +818,7 @@ option {
   }
 
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -845,6 +889,7 @@ option {
     border-radius: 50%;
 
   }
+
   .info__block:nth-of-type(1) {
     grid-area: 1/1/2/2;
   }
