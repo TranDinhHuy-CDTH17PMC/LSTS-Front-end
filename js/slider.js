@@ -2,8 +2,6 @@ var classNames = ["slide", "slide__new"];
 var dotIndexs  = ["slide--index","slide--new"];
 var slideIndex = [0, 0];
 
-showSlide(0);
-showSlide(1);
 
 
 function plusSlides(n , no){
@@ -43,7 +41,7 @@ function showSlideNumber(n, no) {
   var dots = document.getElementById(dotIndexs[no]).getElementsByClassName("fa-circle");
   console.log(slideIndex);
   if (n < 1) {
-    slideIndex[no] = slideIndex.length;
+    slideIndex[no] = slides.length;
   }
   if (n > slides.length) {
     slideIndex[no] = 1;

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index-menu.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic,500italic" rel="stylesheet"
+    type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+
+  <title>Trường THPT & THCS Đinh Thiện Lý</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-lsts.png" /></a>
+      </div>
+      <div class="bar">
+        <div class="top-bar">
+          <div class="top-bar__right--wrapper">
+            <ul class="top-bar__right">
+              <li class="top-bar__item">
+                <img src="images/vi.gif" />
+              </li>
+              <li class="top-bar__item">
+                <img src="images/en.gif" />
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar__left--wrapper">
+            <ul class="top-bar__left">
+              <li class="top-bar__item">
+                <a><i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-bar">
+          <div class="main-bar__left">
+            <button class="main-bar--menu" id="left-menu" onclick="closeMenuBar()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+            <div id="dropdown-list">
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-home2.png" />
+                  <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-chuongtrinh2.png" />
+                  <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#">
+                  <img src="images/icon-hocsinh2.png" />
+                  <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-tuyensinh2.png" />
+                  <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <a>
+                <img src="/images/icon-hoidap2.png" />
+                <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+              </a>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-lienhe2.png" />
+                  <p>Liên hệ <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main-bar--right">
+            <button class="main-bar--button"> <i class="fa fa-phone"></i> 0389320842</button>
+            <button class="main-bar--menu" onclick="openNav()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="menu-container--left">
+
+      <div id="sidenav-right" class="sidenav">
+        <button class="close-button" onclick="closeNav()"><i class="fa fa-times"></i>
+        </button>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Search</a>
+      </div>
+
+    </div>
+  </header>
+  <section>
+    <div class="child-menu-container">
+      <div class="child-menu__wrapper">
+        <ul class="list-item">
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo
+            </a>
+
+          </li>
+          </li>
+          <li class="item"><a href="#">Thông báo
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#">Thông báo</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom__child-menu-container">
+      <div class="child-menu__wrapper">
+        <ul class="list-item">
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Thông báo</a></li>
+          <li class="item"><a href="#">Ảnh & Video
+              <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="album.html">Ảnh</a>
+              <a href="video.html">Video</a>
+            </div>
+          </li>
+          </li>
+          <li class="item"><a href="#">Thông báo
+              <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="item">
+            <a href="#">Thông báo <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="section-container">
+
+      <div class="header header--center">
+        <p>Quá trình phát triển</p>
+      </div>
+      <div class="content content--timeline">
+        <div class="time-container left">
+
+          <div class="timeline__body">
+            <div class="timeline__title">
+              <h1>2018-2019</h1>
+            </div>
+            <p>Danh hiệu “Tập thể lao động xuất sắc” do Giám đốc Sở giáo dục và Đào tạo Thành phố Hồ Chí Minh trao tặng.
+            </p>
+          </div>
+        </div>
+        <div class="time-container right">
+
+          <div class="timeline__body">
+            <div class="timeline__title">
+              <h1>2017 - 2018</h1>
+            </div>
+            <p>Bằng khen “Tập thể lao động xuất sắc” và cờ thi đua của Chủ tịch Ủy ban Nhân dân Thành phố</p>
+          </div>
+        </div>
+        <div class="time-container left">
+          <div class="timeline__body">
+            <div class="timeline__title">
+              <h1>2016 - 2017
+              </h1>
+            </div>
+            <p>Cờ thi đua “Đơn vị dẫn đầu phong trào thi đua” của Chủ tịch Ủy ban Nhân dân Thành phố.</p>
+          </div>
+        </div>
+        <div class="time-container right">
+          <div class="timeline__body">
+            <div class="timeline__title">
+              <h1>2015 - 2016</h1>
+            </div>
+            <p>Bằng khen “Tập thể lao động xuất sắc” của Chủ tịch Ủy ban Nhân dân Thành phố.</p>
+          </div>
+        </div>
+        <div class="time-container left">
+          <div class="timeline__body">
+            <div class="timeline__title">
+              <h1>2014 - 2015</h1>
+            </div>
+            <p>Bằng khen “Tập thể lao động xuất sắc” của Chủ tịch Ủy ban Nhân dân Thành phố và Cờ thi đua “Đơn vị xuất
+              sắc tiêu biểu” của Bộ Giáo dục và Đào tạo</p>
+          </div>
+        </div>
+        <div class="time-container right">
+          <div class="timeline__body">
+            <div class="timeline__title">
+              <h1>2013 - 2014</h1>
+            </div>
+            <p>Bằng khen “Tập thể lao động xuất sắc” của Chủ tịch Ủy ban Nhân dân Thành phố và Bằng khen của Bộ trưởng
+              Bộ giáo dục và Đào tạo.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section>
+    <div class="section-container">
+      <div class="header header--center">
+        <p>Content Circle</p>
+      </div>
+      <div class="content content--circle">
+        <div class="circle-container">
+          <div class="circle__info">
+          
+            <div class="info__block info--left">
+              <ul>
+                <h3><a>Vượt trội</a></h3>
+                <li class="info__item">
+                  <p>Cam kết phục vụ và hành động nhằm đem đến sự đổi thay tích cực cho cuộc sống của những người xung
+                    quanh và cho môi trường.</p>
+                </li>
+                <li class="info__item">
+                  <p>Đóng góp thời gian, năng lượng và tài năng để cải thiện chất lượng cuộc sống trong trường học, cộng
+                    đồng, quốc gia và thế giới.</p>
+                </li>
+                <li class="info__item">
+                  <p>Đóng góp thời gian, năng lượng và tài năng để cải thiện chất lượng cuộc sống trong trường học, cộng
+                    đồng, quốc gia và thế giới.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="info__block info--right">
+              <ul>
+                <h3><a>Title</a></h3>
+                <li class="info__item">
+                  <p>
+                    Cam kết phục vụ và hành động nhằm đem đến sự đổi thay tích cực cho cuộc sống của những người xung
+                    quanh và cho môi trường.
+                    Đóng góp thời gian, năng lượng và tài năng để cải thiện chất lượng cuộc sống trong trường học, cộng
+                    đồng, quốc gia và thế giới.
+                    Tìm hiểu, khám phá các khái niệm, ý tưởng,
+                    và các vấn đề mang tính địa phương
+                    và toàn cầu.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="info__block info--left">
+
+              <ul>
+                <h3><a>Title</a></h3>
+                <li class="info__item">
+                  <p>
+                    Cam kết phục vụ và hành động nhằm đem đến sự đổi thay tích cực cho cuộc sống của những người xung
+                    quanh và cho môi trường.
+                    .</p>
+                </li>
+
+              </ul>
+            </div>
+            <div class="info__block info--right">
+
+              <ul>
+                <h3><a>Title</a></h3>
+                <li class="info__item">
+                  <p>
+                    Hành xử chính trực và trung thực.
+                    Nhìn nhận công bằng về giá trị của cá nhân, tập thể và cộng đồng.
+                    Trung thực trong mọi việc, bao gồm cả trong học tập và thi cử. </p>
+                </li>
+              </ul>
+            </div>
+            <div class="info__block info--left">
+
+              <ul>
+                <h3><a>Title</a></h3>
+                <li class="info__item">
+                  <p>
+                    Cam kết phục vụ và hành động nhằm đem đến sự đổi thay tích cực cho cuộc sống của những người xung
+                    quanh và cho môi trường.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="info__block info--right">
+              <ul>
+                <h3><a>Title</a></h3>
+                <li class="info__item">
+                  <p>Luôn dám làm dám chịu
+                    Có thái độ tích cực.
+                    Ứng xử theo chuẩn mực</p>
+
+                </li>
+                <li class="info__item">
+                  <p>Luôn dám làm dám chịu
+                    Có thái độ tích cực.
+                    Ứng xử theo chuẩn mực</p>
+                </li>
+                <li class="info__item">
+                  <p>Luôn dám làm dám chịu
+                    Có thái độ tích cực.
+                    Ứng xử theo chuẩn mực</p>
+
+                </li>
+
+              </ul>
+            </div>
+            <div class="info__block info--center">
+              <div class="circle__img"><img src="/images/gia-tri-cot-loi.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section>
+    <div class="section-container bg-tamnhin">
+      <div class="header header--center">
+        <p>Content Circle</p>
+      </div>
+      <div class="content content--text">
+        <img src="/images/tam-nhin.png" alt="tamnhin">
+        <p class="title">Tầm nhìn</p>
+        <p> <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda
+          eligendi distinctio at eius, atque
+          saepe expedita? Aperiam iste deleniti id beatae labore perferendis eaque, doloribus, adipisci autem, alias
+          asperiores.</p>
+        <p class="title">Sứ mệnh</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda eligendi distinctio at eius, atque
+          saepe expedita? Aperiam iste deleniti id beatae labore perferendis eaque, doloribus, adipisci autem, alias
+          asperiores. </i> <i class="fa fa-quote-right"></i></p>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer--wrapper">
+      <div class="information">
+        <div class="info--header">Trường THCS và THPT Đinh Thiện Lý</div>
+        <div class="info-list">
+          <ul>
+            <li><i class="fa fa-user"></i> 80 Nguyễn Hữu Cảnh, Phường Tân Phong, Quận 7, Thành phố Hồ Chí
+              Minh</li>
+            <li><i class="fa fa-user"></i> Tel: (028) 5411-0040 ; Fax: (028) 5411-0039</li>
+            <li><i class="fa fa-user"></i> E-mail: info@lsts.edu.vn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="new__footer">
+        <div class="info--header">Tin tức</div>
+        <div class="info-list">
+          <ul>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Giáo viên</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+
+
+</html>

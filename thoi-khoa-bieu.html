@@ -10,7 +10,6 @@
         /> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/index-menu.css">
-  <link rel="stylesheet" href="css/slider.css">
   <link rel="icon" href="/images/favicon.ico" />
   <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic,500italic" rel="stylesheet"
     type="text/css">
@@ -159,71 +158,29 @@
     </div>
   </header>
 
+
+
   <section>
     <div class="section-container bg-tamnhin">
       <div class="header header--center">
-        <p>List</p>
+        <p>Hiệu ca</p>
       </div>
-      <div class="content">
-
-        <div class="content980">
-
-          <!-- Article -->
-          <article itemscope="" itemtype="http://schema.org/Article">
-            <meta itemprop="inLanguage" content="vi-VN">
-          
-            <section class="list--circle" itemprop="articleBody">
-
-              <p style="text-align: justify;">Học sinh mặc đồng phục tới trường. Đồng phục gồm đồng phục chính khóa và
-                đồng phục thể dục. Học sinh mặc đồng phục chính khóa trong suốt năm học và khi tham gia các buổi lễ của
-                nhà trường. Vào những ngày có tiết thể dục hoặc có buổi tập thể dục đầu giờ hay khi học những môn tự
-                chọn thuộc lĩnh vực thể dục thể thao và khi tham gia câu lạc bộ mang tính vận động thì các em sẽ mặc
-                đồng phục thể dục.<br>Chuẩn trang phục của học sinh trường Đinh Thiện Lý như sau:</p>
-              <p><strong>ĐỒNG PHỤC CHÍNH KHÓA</strong></p>
-              <ul>
-                <li><strong>THCS</strong></li>
-              </ul>
-              <p><strong><img src="../images/icon/icon-hoc-sinh-nam.png" alt="icon hoc sinh nam" width="30" height="30"
-                    style="float: left;">&nbsp;Nam:</strong></p>
-              <p style="padding-left: 30px;">Áo sơ mi trắng có phù hiệu và mã số, cà vạt màu xanh.<br> Quần tây lửng màu
-                xanh dài ngang đầu gối.<br> Dây lưng màu đen hoặc nâu.<br> Giày thể thao trắng, dây giày màu trắng; đi
-                vớ trắng với độ dài trên mắt cá chân.</p>
-              <p><strong><img src="../images/icon/icon-hoc-sinh-nu.png" alt="icon hoc sinh nu" width="28" height="28"
-                    style="float: left;">&nbsp;Nữ:</strong></p>
-              <p style="padding-left: 30px;">Áo sơ mi trắng có phù hiệu và mã số; cổ áo màu xanh, có sọc trắng; nơ màu
-                xanh.<br> Váy xếp li màu xanh, dài ngang gối.<br> Giày thể thao trắng, dây giày màu trắng; đi vớ trắng
-                với độ dài trên mắt cá chân.</p>
-              <ul>
-                <li><strong>THPT</strong></li>
-              </ul>
-              <p><img src="../images/icon/icon-hoc-sinh-nam.png" alt="icon hoc sinh nam" width="30" height="30"
-                  style="float: left;"><strong>&nbsp;Nam:</strong></p>
-              <p style="padding-left: 30px;">Áo sơ mi trắng có phù hiệu và mã số, cà vạt màu xám.<br> Quần tây dài màu
-                xám.<br> Dây lưng màu đen hoặc nâu.<br> Giày thể thao trắng, dây giày màu trắng; đi vớ trắng với độ dài
-                trên mắt cá chân.</p>
-              <p><img src="../images/icon/icon-hoc-sinh-nu.png" alt="icon hoc sinh nu" width="28" height="28"
-                  style="float: left;">&nbsp;<strong>Nữ:</strong></p>
-              <p style="padding-left: 30px;">Áo sơ mi trắng có phù hiệu và mã số; cổ áo và cà vạt màu xám, có sọc
-                trắng.<br> Váy xếp li màu xám, dài ngang gối.<br> Giày thể thao trắng, dây giày màu trắng; đi vớ trắng
-                với độ dài trên mắt cá chân.</p>
-              <p>&nbsp;</p>
-           <img src="../images/icon/trang-phuc.png" alt="trang phuc" width="645" height="467"
-                  style="display: block; margin-left: auto; margin-right: auto;">
-              <p>&nbsp;</p>
-              <p><strong>ĐỒNG PHỤC THỂ DỤC</strong><br>Áo thun trắng xám, cổ áo màu xanh đen, tay áo có viền xanh
-                đen.<br>Quần lửng màu xanh đen.<br>Giày thể thao trắng, dây giày màu trắng; đi vớ trắng với độ dài trên
-                mắt cá chân.</p>
-            </section>
-
-
-
-          </article>
-          <!-- //Article -->
-
-
+      <div class="content content--music">
+        <div class="music">
+          <canvas width="300" height="100" id="canvas"></canvas> 
+          <canvas width="300" height="100" id="canvas2"></canvas> 
+          <div class="music__src">
+            <audio  id="audio" controls="controls">
+              <source src="audio/audio.mp3" type="audio/mpeg">
+            </audio>
+          </div>
         </div>
-
+        <div class="music_img">
+          <img src="images/thoi-gian-bieu.png" alt="">
+        </div>
       </div>
+
+    </div>
   </section>
 
 
@@ -254,7 +211,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/slider.js"></script>
   <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
