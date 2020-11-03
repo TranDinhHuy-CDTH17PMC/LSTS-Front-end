@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index-menu.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic,500italic" rel="stylesheet"
+    type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+
+  <title>Trường THPT & THCS Đinh Thiện Lý</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-lsts.png" /></a>
+      </div>
+      <div class="bar">
+        <div class="top-bar">
+          <div class="top-bar__right--wrapper">
+            <ul class="top-bar__right">
+              <li class="top-bar__item">
+                <img src="images/vi.gif" />
+              </li>
+              <li class="top-bar__item">
+                <img src="images/en.gif" />
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar__left--wrapper">
+            <ul class="top-bar__left">
+              <li class="top-bar__item">
+                <a><i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-bar">
+          <div class="main-bar__left">
+            <button class="main-bar--menu" id="left-menu" onclick="closeMenuBar()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+            <div id="dropdown-list">
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-home2.png" />
+                  <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-chuongtrinh2.png" />
+                  <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#">
+                  <img src="images/icon-hocsinh2.png" />
+                  <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-tuyensinh2.png" />
+                  <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <a>
+                <img src="/images/icon-hoidap2.png" />
+                <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+              </a>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-lienhe2.png" />
+                  <p>Liên hệ <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main-bar--right">
+            <button class="main-bar--button"> <i class="fa fa-phone"></i> 0389320842</button>
+            <button class="main-bar--menu" onclick="openNav()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="menu-container--left">
+
+      <div id="sidenav-right" class="sidenav">
+        <button class="close-button" onclick="closeNav()"><i class="fa fa-times"></i>
+        </button>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Search</a>
+      </div>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="section-container bg-tamnhin">
+      <div class="header header--center">
+        <p>List</p>
+      </div>
+      <div class="content">
+        <p><strong>HỌC BỔNG HIẾU HỌC LAWRENCE S.TING</strong></p>
+        <p>Học bổng hiếu học Lawrence S.Ting được xét cấp cho học sinh nghèo vượt khó, có thành tích xuất sắc trong học
+          tập. Học sinh được cấp học bổng sẽ được miễn toàn bộ học phí và tùy theo hoàn cảnh được xem xét hỗ trợ một
+          phần hoặc toàn phần sinh hoạt phí khi các em học tập tại trường Đinh Thiện Lý.</p>
+        <p><strong>HỌC BỔNG KHUYẾN HỌC LAWRENCE S.TING</strong></p>
+        <p style="text-align: justify;">Học bổng khuyến học Lawrence S.Ting là phần thưởng danh dự dành cho học sinh có
+          thành tích xuất sắc trong học tập khi các em học tập tại trường Đinh Thiện Lý. Học bổng khuyến học được cấp
+          theo từng học kỳ, dựa trên kết quả học tập và rèn luyện của học sinh.</p>
+        <p><img src="/images/tuyensinh/ho-so-du-tuyen-2.jpg" alt=""
+            style="display: block; margin-left: auto; margin-right: auto;"></p>
+      </div>
+      <div class="content">
+        <div class="list--circle">
+          <ul>
+            <li>Học sinh là con của người lao động đang làm việc tại đơn vị thuộc tập đoàn CT&amp;D bao gồm Công ty Phú
+              Mỹ Hưng, Công ty TNHH Tân Thuận, Công ty TNHH Điện lực Hiệp Phước, Công ty TNHH Tư vấn xây dựng Sino-
+              Pacific, Quỹ Hỗ trợ cộng đồng Lawrence S.Ting, trường Quốc tế Nam Sài Gòn sẽ được giảm 20% học phí chính
+              khóa. Số tiền học phí được giảm này sẽ do cơ quan mà cha/mẹ học sinh đang công tác thanh toán cho nhà
+              trường.</li>
+            <li>Học sinh là con của người lao động đang làm việc tại trường Đinh Thiện Lý sẽ được hưởng chính sách miễn
+              giảm học phí theo quy định của nhà trường.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer--wrapper">
+      <div class="information">
+        <div class="info--header">Trường THCS và THPT Đinh Thiện Lý</div>
+        <div class="info-list">
+          <ul>
+            <li><i class="fa fa-user"></i> 80 Nguyễn Hữu Cảnh, Phường Tân Phong, Quận 7, Thành phố Hồ Chí
+              Minh</li>
+            <li><i class="fa fa-user"></i> Tel: (028) 5411-0040 ; Fax: (028) 5411-0039</li>
+            <li><i class="fa fa-user"></i> E-mail: info@lsts.edu.vn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="new__footer">
+        <div class="info--header">Tin tức</div>
+        <div class="info-list">
+          <ul>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Giáo viên</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+
+
+</html>
