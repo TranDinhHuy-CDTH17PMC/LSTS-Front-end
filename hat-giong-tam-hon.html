@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index-menu.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300,700,400italic,300italic,500italic" rel="stylesheet"
+    type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+
+  <title>Trường THPT & THCS Đinh Thiện Lý</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-lsts.png" /></a>
+      </div>
+      <div class="bar">
+        <div class="top-bar">
+          <div class="top-bar__right--wrapper">
+            <ul class="top-bar__right">
+              <li class="top-bar__item">
+                <img src="images/vi.gif" />
+              </li>
+              <li class="top-bar__item">
+                <img src="images/en.gif" />
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar__left--wrapper">
+            <ul class="top-bar__left">
+              <li class="top-bar__item">
+                <a><i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+              <li class="top-bar__item">
+                <a> <i class="fa fa-sitemap"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-bar">
+          <div class="main-bar__left">
+            <button class="main-bar--menu" id="left-menu" onclick="closeMenuBar()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+            <div id="dropdown-list">
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-home2.png" />
+                  <p>Nhà trường <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 3 Link 3 Link 3 Link 3 Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-chuongtrinh2.png" />
+                  <p>Chương trình <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#">
+                  <img src="images/icon-hocsinh2.png" />
+                  <p>Học sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-tuyensinh2.png" />
+                  <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 3</a>
+                  <a href="#">Link 4</a>
+                  <a href="#">Link 5</a>
+                </div>
+              </div>
+              <a>
+                <img src="/images/icon-hoidap2.png" />
+                <p>Tuyển sinh <i class="fa fa-caret-down"></i></p>
+              </a>
+              <div class="dropdown">
+                <a>
+                  <img src="images/icon-lienhe2.png" />
+                  <p>Liên hệ <i class="fa fa-caret-down"></i></p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main-bar--right">
+            <button class="main-bar--button"> <i class="fa fa-phone"></i> 0389320842</button>
+            <button class="main-bar--menu" onclick="openNav()">
+              <i class="fas fa-list-ul"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="menu-container--left">
+
+      <div id="sidenav-right" class="sidenav">
+        <button class="close-button" onclick="closeNav()"><i class="fa fa-times"></i>
+        </button>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Search</a>
+      </div>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="section-container">
+      <div class="header header--main">
+        <p>Content 5</p>
+      </div>
+      <div class="content content-5">
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/hat-giong-tam-hon/1100929ce10c721cac00963df69d3ca3_M.jpg">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/hat-giong-tam-hon/d223ee4fdebdcd40ae2cd65f88141ed1_S.jpg">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsumng elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sim ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/hat-giong-tam-hon/e63eba4a60c5a7383338249762b2606c_S.jpg">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem iing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam te perspiciatis.  </p>
+                <div class="card__title card__more" ><a href="#">Đọc tiếp >></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum dg elit. </a></div>
+            <div class="card__body">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita i facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Lorem ipsum doloripisicing elit. </a></div>
+            <div class="card__body">
+           
+              <p>Lorem ipsilique expedita quidem quis beatae
+                commodi facere quisquam ut deleniti, reprehenderit sit ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+             
+
+            </div>
+          </div>
+        </div>
+        <div class="card card--inline">
+          <div class="card__img">
+            <img src="/images/slides/27.12.2017-HTTN-18.JPG">
+          </div>
+          <div class="card__text">
+            <div class="card__title"><a href="#">Loremsicing elit. </a></div>
+            <div class="card__body">
+           
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, similique expedita quidem quis beatae
+                commodi ullam repellendus in totam eveniet corporis?
+                Assumenda, cupiditate perspiciatis.</p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="footer--wrapper">
+      <div class="information">
+        <div class="info--header">Trường THCS và THPT Đinh Thiện Lý</div>
+        <div class="info-list">
+          <ul>
+            <li><i class="fa fa-user"></i> 80 Nguyễn Hữu Cảnh, Phường Tân Phong, Quận 7, Thành phố Hồ Chí
+              Minh</li>
+            <li><i class="fa fa-user"></i> Tel: (028) 5411-0040 ; Fax: (028) 5411-0039</li>
+            <li><i class="fa fa-user"></i> E-mail: info@lsts.edu.vn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="new__footer">
+        <div class="info--header">Tin tức</div>
+        <div class="info-list">
+          <ul>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Giáo viên</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+            <li> <a href="#">Nhà trường</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/card.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+
+
+</html>

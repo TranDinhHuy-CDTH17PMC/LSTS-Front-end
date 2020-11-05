@@ -59,10 +59,8 @@
   line-height: 40px;
 }
 .main-bar {
-
   position: relative;
-  /* height:  80px;
-  overflow: hidden; */
+
 }
 
 
@@ -88,7 +86,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 77px;
-  animation: dropdown .3s;
+  animation: dropdown .5s;
 }
 
 .dropdown-content a {
@@ -98,7 +96,7 @@
   display: block;
   width: 100%;
   text-align: left;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .dropdown-content a:hover {
